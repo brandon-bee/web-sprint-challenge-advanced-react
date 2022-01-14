@@ -117,9 +117,18 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. What are the main differences between a class-based and a functional component?
+  A class based component is built to inherit all the properties from a react component, whereas a functional component doesn't inherit anything and needs to be given any functionality you want. Class-based requires a render, and is stateful by default.
 
 2. When does a componentWillMount function be called? What about a componentDidUpdate?
+  componentWillMount is called BEFORE a render method is executed.
+  componentDidUpdate is called AFTER the render method, like didMount, but will perform DOM operations on updates and not just initial mount.
 
 3. Define stateful logic.
+  Any code that uses state. Such as custom hooks using state to pass it to the component its designed for.
 
-4. What are the three step of creating a successful test? What is done in each phase? 
+4. What are the three step of creating a successful test? What is done in each phase?
+  Arrange: render the thing you are testing 
+
+  Act: simulating user/site actions
+
+  Assert: Where the actual expectations of the test are
