@@ -10,7 +10,7 @@ const CheckoutForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form data-testid="checkoutForm" onSubmit={handleSubmit}>
         <h2>Checkout Form</h2>
         <label>
           First Name:
